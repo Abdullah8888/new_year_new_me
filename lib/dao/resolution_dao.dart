@@ -1,9 +1,15 @@
+import 'package:new_year_new_me/model/resolution_model.dart';
+
 class ResolutionDao {
 
-Future createResolution() async {}
+Future createResolution(Resolution resolution) {}
 
-Future updateResolution(int resolutionId) async {}
+Future updateResolution(int resolutionId)  {}
 
-Future deleteResolution(int resolutionId) async {}
+Future deleteResolution(int resolutionId)  {}
+
+Future fetchAllResolutions ()  {}
+
+void createReslutionTableForAYear ()  {}
 
 }
