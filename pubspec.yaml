@@ -25,6 +25,8 @@ dependencies:
     sdk: flutter
   sqflite: ^1.1.0
   path_provider: ^0.5.0+1
+  charts_flutter: ^0.9.0
+  flutter_local_notifications: ^3.0.3
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -55,6 +57,7 @@ flutter:
     - images/orange_mark.png
     - images/round_check.png
     - images/right_arrow.png
+    - images/left_arrow.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 

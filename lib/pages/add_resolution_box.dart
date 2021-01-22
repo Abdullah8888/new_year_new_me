@@ -146,6 +146,7 @@ class _AddResolutionBoxState extends State<AddResolutionBox> {
     return Container(
       padding: EdgeInsets.all(10),
       child: RaisedButton(
+        
         child: Text(
           dateText
         ),

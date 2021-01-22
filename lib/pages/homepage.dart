@@ -2,20 +2,19 @@ import 'dart:ffi';
 
 import 'package:flutter/material.dart';
 import 'package:new_year_new_me/blocs/resolution_bloc.dart';
+import 'package:new_year_new_me/local_push_notification/local_push_notification.dart';
 import 'package:new_year_new_me/model/resolution_model.dart';
+import 'package:new_year_new_me/pages/completed_resolution.dart';
+import 'package:new_year_new_me/pages/summary_report.dart';
 
 import 'add_resolution_box.dart';
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
-
-  final String title;
-
+class HomePage extends StatefulWidget {
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _HomePageState createState() => _HomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _HomePageState extends State<HomePage> {
   int _counter = 0;
   final _scaffoldKey = GlobalKey<ScaffoldState>();
 
@@ -230,7 +229,12 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Widget _completedResolutionContainer() {
     return InkWell(
-      onTap: () {},
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => LocalNotificationWidget())
+        );
+      },
       child: ListTile(
         leading: Image.asset(
           'images/green_mark.png',
@@ -282,7 +286,12 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Widget _summaryReportContainer() {
     return InkWell(
-      onTap: () {},
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => SummaryReport())
+        );
+      },
       child: ListTile(
         leading: Image.asset(
           'images/orange_mark.png',
