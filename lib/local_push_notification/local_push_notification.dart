@@ -82,7 +82,7 @@ class _LocalNotificationWidgetState extends State<LocalNotificationWidget> {
             _showNotification();
           },
           child: Text(
-            'Click me'
+            'Click'
           ),
         ),
       ),
